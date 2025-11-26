@@ -42,11 +42,7 @@ The second pipeline handles monitoring of **Docker containers**. A Python script
 
 This project uses two GitHub Actions workflows for CI/CD:
 
-<img src="./_documentation/schema_ci_cd_2.png" alt="CI CD" width="450"/>
-
 <img src="./_documentation/schema_ci_cd_2.png" alt="CI CD" width="500"/>
-
-<img src="./_documentation/schema_ci_cd_2.png" alt="CI CD" width="550"/>
 
 #### Continuous Integration (CI) – [`streaming-CI.yml`](.github/workflows/streaming_CI.yml)
 - Runs on **GitHub-hosted servers**  
