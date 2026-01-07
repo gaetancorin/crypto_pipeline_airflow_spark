@@ -23,7 +23,7 @@ The GitHub Actions **CI/CD pipeline** builds containers, runs unit tests on ever
 - **Github Action**
 
 ## Global Architecture
-![Global Architecture](./_documentation/global_architecture.png)
+![Global Architecture](./_documentation/assets/global_architecture.png)
 
 ## Data pipelines
 There are two data pipelines in this project:
@@ -31,18 +31,18 @@ There are two data pipelines in this project:
 ### BTC/USD and ETH/USD pipeline
 This pipeline handles BTC/USD and ETH/USD data. Data extraction and storage are performed in **real-time using Python websockets**. Technical indicators are processed through **Airflow DAGs**, and computations are delegated to a **Spark cluster** when needed .
 
-![Pipeline Data](./_documentation/pipeline_data.png)
+![Pipeline Data](./_documentation/assets/pipeline_data.png)
 
 ### Monitoring Pipeline
 The second pipeline handles monitoring of **Docker containers**. A Python script collects container status, CPU usage, and memory metrics from Docker running on WSL, and exposes this data for **Prometheus storage**. **Grafana** then visualizes the metrics in interactive dashboards, with a 30-second delay between an event and its display.
 
-![Pipeline Monitoring](./_documentation/pipeline_monitoring.png)
+![Pipeline Monitoring](./_documentation/assets/pipeline_monitoring.png)
 
 ## CI/CD (Continuous Integration / Continuous Deployment)
 
 This project uses two GitHub Actions workflows for CI/CD:
 
-<img src="./_documentation/schema_ci_cd_2.png" alt="CI CD" width="500"/>
+<img src="./_documentation/assets/schema_ci_cd_2.png" alt="CI CD" width="500"/>
 
 #### Continuous Integration (CI) – [`streaming-CI.yml`](.github/workflows/streaming_CI.yml)
 - Runs on **GitHub-hosted servers**  
@@ -62,12 +62,12 @@ This setup ensures that code is always tested before deployment, deployment happ
 # Results:
 ### Calculated technical indicators results:
 **ETH/USD 3/5-Minute Moving Average**: Computes the moving average of ETH/USD prices over 3 or 5 minutes.
-![Eth Usd Moving Average](./_documentation/eth_usd_mm_result.png)
+![Eth Usd Moving Average](./_documentation/assets/eth_usd_mm_result.png)
 **BTC/ETH 5-Minute Gap Average**: Calculates the price difference between BTC and ETH every minute, then computes a rolling average over 5 minutes.
-![Btc Eth Gap Average](./_documentation/btc_eth_gap_avg_result.png)
+![Btc Eth Gap Average](./_documentation/assets/btc_eth_gap_avg_result.png)
 
 ### Grafana Monitoring Results:
-![Grafana Monitoring](./_documentation/monitoring_grafana.png)
+![Grafana Monitoring](./_documentation/assets/monitoring_grafana.png)
 
 # Getting Started
 
