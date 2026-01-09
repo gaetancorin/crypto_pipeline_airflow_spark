@@ -24,6 +24,8 @@ The GitHub Actions **CI/CD pipeline** builds containers, runs unit tests on ever
 
 ## Global Architecture
 ![Global Architecture](./_documentation/assets/global_architecture.png)
+![Global Architecture](./_documentation/assets/schema_architecture_v2/schema_architecture_v2.png)
+![Global Architecture](./_documentation/assets/schema_architecture_v2/schema_architecture_v2_2.png)
 
 ## Data pipelines
 There are two data pipelines in this project:
