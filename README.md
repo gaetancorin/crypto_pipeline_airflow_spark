@@ -106,7 +106,9 @@ This project is designed as a proof of concept to showcase my data engineering s
 - **Grafana**: http://localhost:3000/ (Grafana default user/pass : admin/admin)
 - **Mailhog**: http://localhost:8025/
 
-6. **Stop and remove all containers** using the clean orchestrator script: 
+6. **Download the Notebook** to visualize the data and technical indicator results as a graph [here](https://open-documentations.s3.eu-west-3.amazonaws.com/crypto_pipeline_graph_visualisation_data.ipynb).
+
+7. **Stop and remove all containers** using the clean orchestrator script: 
   ```
   .\cleanorchestrateur.ps1
   ```
